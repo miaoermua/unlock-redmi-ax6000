@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 22:34:26
+ # @LastEditTime: 2022-12-21 22:45:51
  # @FilePath: /unlock-redmi-ax6000/uboot.sh
 ### 
 #!/bin/bash
@@ -37,9 +37,10 @@ main(){
         echo "Error: backup failed"
         exit 1
     fi
-    echo "Backup success! Please download it to your computer"
-    echo "Factory: /tmp/mtd4_Factory.bin"
-    echo "FIP: /tmp/mtd5_FIP.bin"
+
+    echo -e "\033[31m Backup success! Please download it to your computer \033[0m"
+    echo -e "\033[31mFactory: /tmp/mtd4_Factory.bin \033[0m"
+    echo -e "\033[31mFIP: /tmp/mtd5_FIP.bin \033[0m"
 
 }
 main
