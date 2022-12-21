@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 22:17:03
+ # @LastEditTime: 2022-12-21 22:21:14
  # @FilePath: /unlock-redmi-ax6000/uboot.sh
 ### 
 #!/bin/bash
@@ -24,3 +24,9 @@ check_file(){
         exit 1
     fi
 }
+main(){
+    download_file
+    check_file
+    echo "download_file and check_file success"
+}
+main
