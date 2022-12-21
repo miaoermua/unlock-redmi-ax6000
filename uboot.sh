@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 22:21:14
+ # @LastEditTime: 2022-12-21 22:34:26
  # @FilePath: /unlock-redmi-ax6000/uboot.sh
 ### 
 #!/bin/bash
@@ -24,9 +24,22 @@ check_file(){
         exit 1
     fi
 }
+backup(){
+    dd if=/dev/mtd4 of=/tmp/mtd4_Factory.bin
+    dd if=/dev/mtd5 of=/tmp/mtd5_FIP.bin
+}
 main(){
     download_file
     check_file
     echo "download_file and check_file success"
+    backup
+    if [ ! -f /tmp/mtd4_Factory.bin ] || [ ! -f /tmp/mtd5_FIP.bin ]; then
+        echo "Error: backup failed"
+        exit 1
+    fi
+    echo "Backup success! Please download it to your computer"
+    echo "Factory: /tmp/mtd4_Factory.bin"
+    echo "FIP: /tmp/mtd5_FIP.bin"
+
 }
 main
