@@ -2,7 +2,7 @@
 
 感谢:
 
-@ttimochan
+@[ttimochan](https://github.com/ttimochan)
 
 U-boot: https://github.com/hanwckf/bl-mt798x
 
