@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 21:16:34
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 21:39:25
+ # @LastEditTime: 2022-12-21 21:59:46
  # @FilePath: /unlock-redmi-ax6000/setup.sh
 ### 
 #!/bin/bash
@@ -54,7 +54,7 @@ main(){
 
     set_init
 
-    if [ $(ps | grep dropbear | grep -v grep | wc -l) != "1" ]; then
+    if [ $(ps | grep dropbear | grep -v grep | wc -l) == "0" ]; then
         echo "Error: set_init failed"
         exit 1
     fi
@@ -67,7 +67,7 @@ main(){
     fi
     uci_start
 
-    if [ $(uci show firewall | grep auto_ssh | wc -l) != "3" ]; then
+    if [ $(uci show firewall | grep auto_ssh | wc -l) == "0" ]; then
         echo "Error: uci_start failed"
         exit 1
     fi
