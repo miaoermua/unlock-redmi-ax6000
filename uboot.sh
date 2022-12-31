@@ -38,7 +38,7 @@ main(){
         exit 1
     fi
 
-    echo -e "\033[31m Backup success! Please download it to your computer \033[0m"
+    echo -e "\033[31mBackup success! Please download it to your computer \033[0m"
     echo -e "\033[31mFactory: /tmp/mtd4_Factory.bin \033[0m"
     echo -e "\033[31mFIP: /tmp/mtd5_FIP.bin \033[0m"
 
