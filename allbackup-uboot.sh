@@ -41,7 +41,7 @@ main(){
         exit 1
     fi
 
-    echo -e "\033[31m Backup success! Please download it to your computer \033[0m"
+    echo -e "\033[31mBackup success! Please download it to your computer \033[0m"
     echo -e "\033[31mBL2: /tmp/mtd1_BL2.bin \033[0m"
     echo -e "\033[31mNvram: /tmp/mtd2_Nvram.bin \033[0m"
     echo -e "\033[31mBdata: /tmp/mtd3_Bdata.bin \033[0m"
