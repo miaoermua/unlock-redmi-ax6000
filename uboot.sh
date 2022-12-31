@@ -31,7 +31,7 @@ backup(){
 main(){
     download_file
     check_file
-    echo "download_file and check_file success"
+    echo -e "\033[32mdownload file and check file success\033[0m"  
     backup
     if [ ! -f /tmp/mtd4_Factory.bin ] || [ ! -f /tmp/mtd5_FIP.bin ]; then
         echo "Error: backup failed"
