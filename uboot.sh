@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 22:45:51
+ # @LastEditTime: 2023-01-22 18:48:55
  # @FilePath: /unlock-redmi-ax6000/uboot.sh
 ### 
 #!/bin/bash
@@ -28,6 +28,11 @@ backup(){
     dd if=/dev/mtd4 of=/tmp/mtd4_Factory.bin
     dd if=/dev/mtd5 of=/tmp/mtd5_FIP.bin
 }
+rm_self(){
+    dir=$(pwd)
+    file=$(basename $0)
+    rm -rf $dir/$file
+}
 main(){
     download_file
     check_file
@@ -41,6 +46,7 @@ main(){
     echo -e "\033[31mBackup success! Please download it to your computer \033[0m"
     echo -e "\033[31mFactory: /tmp/mtd4_Factory.bin \033[0m"
     echo -e "\033[31mFIP: /tmp/mtd5_FIP.bin \033[0m"
-
+    echo -e "\033[31mThis shell script will rm self \033[0m"
+    rm_self
 }
 main

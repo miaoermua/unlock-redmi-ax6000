@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 21:16:34
  # @LastEditors: ttimochan
- # @LastEditTime: 2022-12-21 21:59:46
+ # @LastEditTime: 2023-01-22 18:47:49
  # @FilePath: /unlock-redmi-ax6000/setup.sh
 ### 
 #!/bin/bash
@@ -72,7 +72,7 @@ main(){
         exit 1
     fi
     mtd erase crash
-
+    
     echo "all works done!"
     sleep 1
     echo "reboot 1 second later"
