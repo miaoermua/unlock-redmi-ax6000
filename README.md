@@ -28,6 +28,8 @@ cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redm
 
 [U-Boot](https://github.com/hanwckf/bl-mt798x)
 
+[auto_ssh](https://github.com/lemoeo/AX6S/blob/main/auto_ssh.sh)
+
 [解锁 Telnet/SSH 教程](https://qust.me/post/ax6000-shellclash)
 
 [刷入 U-Boot 教程](https://www.right.com.cn/forum/thread-8265832-1-1.html)
