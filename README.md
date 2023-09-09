@@ -9,7 +9,7 @@ cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redm
 准备 U-Boot 相关（非刷入）
 
 ```bash
-cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/setup.sh && chmod +x setup.sh && ./setup.sh
+cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/uboot.sh && chmod +x uboot.sh && ./uboot.sh
 ```
 
 ## 详情
