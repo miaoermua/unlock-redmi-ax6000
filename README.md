@@ -22,6 +22,8 @@ cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redm
 
 ## 感谢
 
+因为 hanwckf 删除了关于 20221201 版本的 UBOOT releases 所以这里保留了一份，后续有空会尝试最新的 UBOOT 并且编写为脚本方便安装使用。
+
 @[ttimochan](https://github.com/ttimochan)
 
 [U-Boot](https://github.com/hanwckf/bl-mt798x)

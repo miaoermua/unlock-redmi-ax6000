@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: miaoermua
- # @LastEditTime: 2022-12-21 22:45:51
+ # @LastEditTime: 2023-9-9 18:09:14
  # @FilePath: /unlock-redmi-ax6000/uboot.sh
 ### 
 #!/bin/bash
