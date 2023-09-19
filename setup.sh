@@ -25,7 +25,7 @@ set_init(){
 uci_readly(){
     mkdir /data/auto_ssh
     cd /data/auto_ssh
-    curl -O https://ghproxy.com/https://github.com/miaoermua/unlock-redmi-ax6000/raw/main/auto_ssh.sh
+    curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/auto_ssh.sh
     if [ ! -f auto_ssh.sh ]; then
         echo "Error: auto_ssh.sh download failed"
         exit 1

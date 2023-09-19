@@ -3,13 +3,13 @@
 解锁 SSH
 
 ```bash
-cd /tmp && curl --silent -O https://ghproxy.com/https://github.com/miaoermua/unlock-redmi-ax6000/raw/main/setup.sh && chmod +x setup.sh && ./setup.sh
+cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 准备 U-Boot 相关（非刷入）
 
 ```bash
-cd /tmp && curl --silent -O https://ghproxy.com/https://github.com/miaoermua/unlock-redmi-ax6000/raw/main/uboot.sh && chmod +x uboot.sh && ./uboot.sh
+cd /tmp && curl --silent -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/uboot.sh && chmod +x uboot.sh && ./uboot.sh
 ```
 
 ## 详情

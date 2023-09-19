@@ -12,7 +12,7 @@ if [ $(id -u) != "0" ]; then
 fi
 download_file(){
     cd /tmp
-    curl -O https://ghproxy.com/https://github.com/miaoermua/unlock-redmi-ax6000/raw/main/mt7986_redmi_ax6000-fip-fixed-parts.bin
+    curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/mt7986_redmi_ax6000-fip-fixed-parts.bin
     if [ ! -f mt7986_redmi_ax6000-fip-fixed-parts.bin ]; then
         echo "Error: mt7986_redmi_ax6000-fip-fixed-parts.bin download failed"
         exit 1
