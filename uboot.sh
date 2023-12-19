@@ -48,6 +48,7 @@ main(){
         echo "Error: backup failed"
         exit 1
     fi
+    
     echo "\033[32mSuccess!"
     echo "======================"
     echo -e "\033[31mBackup success! Please use SCP tool to download to your computer \033[0m"
