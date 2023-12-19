@@ -12,7 +12,7 @@ if [ $(id -u) != "0" ]; then
 fi
 download_file(){
     echo "echo \033[33mCopyright"
-    echo "======================""
+    echo "======================"
     echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
     echo "Read more at: miaoer.xyz"
     echo "======================"
