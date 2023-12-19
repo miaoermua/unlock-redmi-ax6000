@@ -11,6 +11,12 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 download_file(){
+    echo "echo \033[33mCopyright"
+    echo "======================""
+    echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
+    echo "Read more at: miaoer.xyz"
+    echo "======================"
+    echo " "
     cd /tmp
     curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/mt7986_redmi_ax6000-fip-fixed-parts.bin
     if [ ! -f mt7986_redmi_ax6000-fip-fixed-parts.bin ]; then
@@ -42,8 +48,9 @@ main(){
         echo "Error: backup failed"
         exit 1
     fi
-
-    echo -e "\033[31mBackup success! Please download it to your computer \033[0m"
+    echo "\033[32mSuccess!"
+    echo "======================"
+    echo -e "\033[31mBackup success! Please use SCP tool to download to your computer \033[0m"
     echo -e "\033[31mFactory: /tmp/mtd4_Factory.bin \033[0m"
     echo -e "\033[31mFIP: /tmp/mtd5_FIP.bin \033[0m"
     echo -e "\033[31mThis shell script will rm self \033[0m"
