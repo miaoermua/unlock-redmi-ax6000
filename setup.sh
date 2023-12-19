@@ -23,6 +23,12 @@ set_init(){
     /etc/init.d/dropbear restart
 }
 uci_readly(){
+    echo "echo \033[33mCopyright"
+    echo "======================""
+    echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
+    echo "Read more at: miaoer.xyz"
+    echo "======================"
+    echo " "
     mkdir /data/auto_ssh
     cd /data/auto_ssh
     curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/auto_ssh.sh
@@ -72,9 +78,14 @@ main(){
         exit 1
     fi
     mtd erase crash
-    
+
+    echo "\033[32mSuccess!"
+    echo "======================"
     echo "all works done!"
     sleep 1
+    echo "The device has been unlocked by SSH."
+    echo "After restarting, you can exit Telnet and proceed to the next step."
+    echo " "
     echo "reboot 1 second later"
     reboot
 }
