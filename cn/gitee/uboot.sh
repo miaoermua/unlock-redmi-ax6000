@@ -1,9 +1,9 @@
 ###
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
- # @LastEditors: ttimochan
- # @LastEditTime: 2023-9-9 18:09:14
- # @FilePath: /unlock-redmi-ax6000/uboot.sh
+ # @LastEditors: 喵二
+ # @LastEditTime: 2024-07-31 23:53:39
+ # @FilePath: \undefinedd:\ls\unlock-redmi-ax6000\cn\gitee\uboot.sh
 ### 
 #!/bin/bash
 if [ $(id -u) != "0" ]; then
@@ -18,7 +18,7 @@ download_file(){
     echo "======================"
     echo " "
     cd /tmp
-    curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/mt7986_redmi_ax6000-fip-fixed-parts.bin
+    curl -O https://gitee.com/miaoermua/unlock-redmi-ax6000/raw/main/mt7986_redmi_ax6000-fip-fixed-parts.bin
     if [ ! -f mt7986_redmi_ax6000-fip-fixed-parts.bin ]; then
         echo "Error: mt7986_redmi_ax6000-fip-fixed-parts.bin download failed"
         exit 1

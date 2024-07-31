@@ -1,9 +1,9 @@
 ###
  # @Author: ttimochan
  # @Date: 2022-12-21 21:16:34
- # @LastEditors: ttimochan
- # @LastEditTime: 2023-01-22 18:47:49
- # @FilePath: /unlock-redmi-ax6000/setup.sh
+ # @LastEditors: 喵二
+ # @LastEditTime: 2024-07-31 23:55:29
+ # @FilePath: \undefinedd:\ls\unlock-redmi-ax6000\cn\server\setup.sh
 ### 
 #!/bin/bash
 if [ $(id -u) != "0" ]; then
@@ -31,7 +31,7 @@ uci_readly(){
     echo " "
     mkdir /data/auto_ssh
     cd /data/auto_ssh
-    curl -O https://fastly.jsdelivr.net/gh/miaoermua/unlock-redmi-ax6000@main/auto_ssh.sh
+    curl -O https://service.miaoer.xyz/unlock-redmi-ax6000/auto_ssh.sh
     if [ ! -f auto_ssh.sh ]; then
         echo "Error: auto_ssh.sh download failed"
         exit 1
