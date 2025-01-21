@@ -13,8 +13,8 @@ fi
 download_file(){
     echo "Copyright"
     echo "======================"
-    echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
-    echo "Read more at: miaoer.xyz"
+    echo "Official blog: https://www.miaoer.net/posts/network/flash-redmi-ax6000"
+    echo "Read more at: miaoer.net"
     echo "======================"
     echo " "
     cd /tmp

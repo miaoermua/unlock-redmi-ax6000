@@ -1,9 +1,9 @@
 ###
  # @Author: ttimochan
  # @Date: 2022-12-21 21:16:34
- # @LastEditors: 喵二
- # @LastEditTime: 2024-07-31 23:55:29
- # @FilePath: \undefinedd:\ls\unlock-redmi-ax6000\cn\server\setup.sh
+ # @LastEditors: miaoermua
+ # @LastEditTime: 2025-01-21 17:19:18
+ # @FilePath: \unlock-redmi-ax6000\cn\server\setup.sh
 ### 
 #!/bin/bash
 if [ $(id -u) != "0" ]; then
@@ -25,13 +25,13 @@ set_init(){
 uci_readly(){
     echo "Copyright ======================"
     echo ""
-    echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
-    echo "Read more at: miaoer.xyz"
+    echo "Official blog: https://www.miaoer.net/posts/network/flash-redmi-ax6000"
+    echo "Read more at: miaoer.net"
     echo "================================"
     echo " "
     mkdir /data/auto_ssh
     cd /data/auto_ssh
-    curl -O https://service.miaoer.xyz/unlock-redmi-ax6000/auto_ssh.sh
+    curl -O https://raw.miaoer.net/unlock-redmi-ax6000/auto_ssh.sh
     if [ ! -f auto_ssh.sh ]; then
         echo "Error: auto_ssh.sh download failed"
         exit 1

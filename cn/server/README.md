@@ -1,17 +1,17 @@
 **解锁红米 AX6000 SSH 并且下载校验 u-boot 脚本**
 
-**阿里云镜像**
+**服务器镜像**
 
 解锁 SSH
 
 ```bash
-cd /tmp && curl --silent -O https://service.miaoer.xyz/unlock-redmi-ax6000/cn/server/setup.sh && chmod +x setup.sh && ./setup.sh
+cd /tmp && curl --silent -O https://raw.miaoer.net/unlock-redmi-ax6000/cn/server/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 准备 U-Boot 相关（非刷入）
 
 ```bash
-cd /tmp && curl --silent -O https://service.miaoer.xyz/unlock-redmi-ax6000/cn/server/uboot.sh && chmod +x uboot.sh && ./uboot.sh
+cd /tmp && curl --silent -O https://raw.miaoer.net/unlock-redmi-ax6000/cn/server/uboot.sh && chmod +x uboot.sh && ./uboot.sh
 ```
 
 ## 详情

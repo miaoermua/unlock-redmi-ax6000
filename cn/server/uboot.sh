@@ -1,9 +1,9 @@
 ###
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
- # @LastEditors: 喵二
- # @LastEditTime: 2024-07-31 23:55:52
- # @FilePath: \undefinedd:\ls\unlock-redmi-ax6000\cn\server\uboot.sh
+ # @LastEditors: miaoermua
+ # @LastEditTime: 2025-01-21 17:05:09
+ # @FilePath: \unlock-redmi-ax6000\cn\server\uboot.sh
 ### 
 #!/bin/bash
 if [ $(id -u) != "0" ]; then
@@ -13,8 +13,8 @@ fi
 download_file(){
     echo "Copyright"
     echo "======================"
-    echo "Official blog: https://www.miaoer.xyz/posts/network/flash-redmi-ax6000"
-    echo "Read more at: miaoer.xyz"
+    echo "Official blog: https://www.miaoer.net/posts/network/flash-redmi-ax6000"
+    echo "Read more at: miaoer.net"
     echo "======================"
     echo " "
     cd /tmp
