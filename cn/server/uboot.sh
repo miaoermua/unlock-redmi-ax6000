@@ -2,7 +2,7 @@
  # @Author: ttimochan
  # @Date: 2022-12-21 22:09:11
  # @LastEditors: miaoermua
- # @LastEditTime: 2025-01-21 17:05:09
+ # @LastEditTime: 2025-01-22 20:59:19
  # @FilePath: \unlock-redmi-ax6000\cn\server\uboot.sh
 ### 
 #!/bin/bash
@@ -18,7 +18,7 @@ download_file(){
     echo "======================"
     echo " "
     cd /tmp
-    curl -O https://service.miaoer.xyz/unlock-redmi-ax6000/mt7986_redmi_ax6000-fip-fixed-parts.bin
+    curl -O https://raw.miaoer.net/unlock-redmi-ax6000/mt7986_redmi_ax6000-fip-fixed-parts.bin
     if [ ! -f mt7986_redmi_ax6000-fip-fixed-parts.bin ]; then
         echo "Error: mt7986_redmi_ax6000-fip-fixed-parts.bin download failed"
         exit 1
