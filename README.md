@@ -1,5 +1,10 @@
 **解锁红米 AX6000 SSH 并且下载校验 u-boot 脚本**
 
+[![Stars](https://m3-markdown-badges.vercel.app/stars/3/3/miaoermua/unlock-redmi-ax6000)](https://github.com/miaoermua/unlock-redmi-ax6000)
+[![Issues](https://m3-markdown-badges.vercel.app/issues/1/2/miaoermua/unlock-redmi-ax6000)](https://github.com/miaoermua/unlock-redmi-ax6000/issues)
+[![Support](https://ziadoua.github.io/m3-Markdown-Badges/badges/Sponsor/sponsor1.svg)](https://www.miaoer.net/sponsor)
+[![COPYING](https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceGPLv2/licencegplv23.svg)](https://github.com/miaoermua/unlock-redmi-ax6000/blob/main/LICENSE)
+
 解锁 SSH
 
 ```bash
